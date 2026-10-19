@@ -5,6 +5,6 @@ int main() {
     const GMIKHAIL::MenuItem* current = &GMIKHAIL::MAIN;
     do {
         current = current->func(current);
-    } while (current != nullptr);
+    } while (true);
     return 0;
 }
