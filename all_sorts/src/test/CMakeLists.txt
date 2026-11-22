@@ -12,7 +12,7 @@ target_link_libraries(test_bubble_sort_classic
 add_test(NAME test_bubble_sort_classic COMMAND test_bubble_sort_classic)
 
 set(SOURCES
-    test_bubble_sort_no_swaped_opt.cpp
+        test_bubble_sort_no_swaped_optimized.cpp
 )
 
 add_executable(test_bubble_sort_no_swaped_opt ${SOURCES})
@@ -22,10 +22,10 @@ target_link_libraries(test_bubble_sort_no_swaped_opt
     ${SORT_LIB}
 )
 
-add_test(NAME test_bubble_sort_no_swaped_opt COMMAND test_bubble_sort_no_swaped_opt)
+add_test(NAME test_bubble_sort_no_swaped_optimized COMMAND test_bubble_sort_no_swaped_opt)
 
 set(SOURCES
-    test_bubble_sort_last_swap_opt.cpp
+        test_bubble_sort_last_swap_optimized.cpp
 )
 
 add_executable(test_bubble_sort_last_swap_opt ${SOURCES})
@@ -35,7 +35,7 @@ target_link_libraries(test_bubble_sort_last_swap_opt
     ${SORT_LIB}
 )
 
-add_test(NAME test_bubble_sort_last_swap_opt COMMAND test_bubble_sort_last_swap_opt)
+add_test(NAME test_bubble_sort_last_swap_optimized COMMAND test_bubble_sort_last_swap_opt)
 
 set(SOURCES
     test_shaker_sort.cpp
@@ -51,7 +51,7 @@ target_link_libraries(test_shaker_sort
 add_test(NAME test_shaker_sort COMMAND test_shaker_sort)
 
 set(SOURCES
-    test_shaker_sort_last_swap_opt.cpp
+        test_shaker_sort_last_swap_optimized.cpp
 )
 
 add_executable(test_shaker_sort_last_swap_opt ${SOURCES})
@@ -61,7 +61,7 @@ target_link_libraries(test_shaker_sort_last_swap_opt
     ${SORT_LIB}
 )
 
-add_test(NAME test_shaker_sort_last_swap_opt COMMAND test_shaker_sort_last_swap_opt)
+add_test(NAME test_shaker_sort_last_swap_optimized COMMAND test_shaker_sort_last_swap_opt)
 
 set(SOURCES
     test_odd_even_sort.cpp
